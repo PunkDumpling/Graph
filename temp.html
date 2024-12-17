@@ -50,8 +50,8 @@
       data: {  
         labels: labels,  
         datasets: [  
-          { label: "High (°C)", borderColor: "#FF5733", fill: false, data: highTemps },  
-          { label: "Low (°C)", borderColor: "#337FFF", fill: false, data: lowTemps }  
+          { label: "High", borderColor: "#FF5733", fill: false, data: highTemps },  
+          { label: "Low", borderColor: "#337FFF", fill: false, data: lowTemps }  
         ]  
       },  
       options: {  
@@ -60,7 +60,7 @@
       }  
     });  
 
-    let tableContent = `<tr><th>Month</th><th>High (°C)</th><th>Low (°C)</th></tr>`;  
+    let tableContent = `<tr><th>Month</th><th>High</th><th>Low</th></tr>`;  
     amsterdamData.forEach((month, index) => {  
       tableContent += `<tr><td>${monthNames[index]}</td><td>${month.high}</td><td>${month.low}</td></tr>`;  
     });  
